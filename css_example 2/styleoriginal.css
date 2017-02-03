@@ -32,7 +32,6 @@ body {
   margin-bottom: 10px;
 }
 
-
 #nav a:link, #nav a:visited  {
   display: block;
   color: #ffffff;
@@ -48,21 +47,21 @@ body {
   background-color: #5E3C58;
 }
 
-#nav2 a:link, #nav2 a:visited {
-  display: block;
-  color: #ffffff;
-  background-color: #C7BBC9
-  font-weight:normal;
-  font-family: Helvetica, Arial, sans-serif;
+.caption {
+  color: black;
+  font-family: Georgia, "Times New Roman", serif;
+  margin-top: 0;
+  font-style: italic;
+  font-size: 0.8em;
+  text-align: right;
 }
 
 #footer {
-    color: black;
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 0.8em;
-    border-top: 1px solid black;
+  color: black;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 0.8em;
+  border-top: 1px solid black;
 }
-
 
 img {
   border: none;
