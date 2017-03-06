@@ -1,0 +1,11 @@
+body {
+	background-color: #ccc;
+}
+
+canvas {
+	border: 1px dotted black;
+}
+
+audio {
+	width: 1000px;
+}
