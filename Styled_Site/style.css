@@ -5,7 +5,6 @@ html {
 
 p {
   color: #FFFAFA;
-  background-color: #CC7677;
   font-family: 'Sahitya',"Times New Roman", serif;
   font-size: 1rem;
   line-height: 1.5rem;
@@ -39,34 +38,6 @@ body {
   background-color: #E8AA8E;
 }
 
-#nav {
-  padding: 0;
-  list-style-type: none;
-}
-
-#nav li {
-  margin: 0;
-  padding: 0;
-  border-bottom: 1px solid #ccc;
-  margin-bottom: 2px;
-}
-
-
-#nav a:link, #nav a:visited  {
-  display: block;
-  color: #FFFAFA;
-  background-color: #FF9495;
-  font-family: 'Sahitya',"Times New Roman", serif;
-  font-weight: bold;
-  text-align: center;
-  text-decoration: none;
-  padding: 1px;
-  font-family: Helvetica, Arial, sans-serif;
-}
-
-#nav a:hover, #nav a:active {
-  background-color: #FFE0E1;
-}
 
 
 #footer {
@@ -79,4 +50,113 @@ body {
 
 img {
   border: none;
+  width: 100%;
+}
+
+header {
+  background: tomato;
+}
+
+/*Flexbox Assignment*/
+
+.aside-1 {
+  background: lightpink;
+  width: 10px;
+}
+
+.aside-2 {
+  background: lightpink;
+}
+
+.wrapper {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+header, article, aside, footer {
+  flex: 1 100%;
+  padding: 10px;
+}
+
+.navigation{
+  list-style: none;
+	margin: 0;
+	background: #E8AA8E;
+    padding: 0;
+    display: flex;
+	flex-flow: column;
+}
+
+.navigation a {
+	text-decoration: none;
+	display: block;
+	color: white;
+    text-align:center;
+    padding: 10px;
+    border-bottom:1px solid black;
+}
+
+.navigation li:last-of-type a{
+  border-bottom: none;
+}
+
+@media (min-width:800px) {
+
+    .navigation {
+        flex-flow: row wrap;
+        justify-content: flex-end;
+    }
+
+    .navigation a {
+        border: none;
+    }
+
+    .navigation a:hover {
+    	background: lightpink;
+    }
+
+    aside {
+        flex: 1 auto;
+    }
+
+    article {
+		flex: 3 0px;
+	}
+
+    .aside-1 {
+        order: 1;
+    }
+
+    article {
+        order: 2;
+    }
+
+    .aside-2 {
+        order: 3;
+    }
+
+    footer {
+        order: 4;
+    }
+
+    article {
+        display: flex;
+        flex-flow: row;
+        flex-wrap: wrap;
+    }
+
+    .image {
+        width: 45%;
+        margin-left: 10px;
+    }
+
+    .story {
+        width: 45%;
+    }
+
+    .first {
+        margin-top: 0;
+        padding: 10px;
+    }
+
 }
