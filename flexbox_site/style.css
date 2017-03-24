@@ -1,0 +1,162 @@
+/*styles go here*/
+html {
+  font-size: 100%;
+}
+
+p {
+  color: #FFFAFA;
+  font-family: 'Sahitya',"Times New Roman", serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.italic {
+	font-style: italic;
+}
+
+h1 {
+  font-family: 'Quicksand', Helvetica, Arial, sans-serif;
+  line-height: 2.5rem;
+  color: #FFFAFA;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-family: 'Open+Sans', Helvetica, Arial, sans-serif;
+  color: #FFFAFA;
+}
+
+
+body {
+  background-color: #C58875;
+}
+
+
+#container {
+  width: 95%;
+  margin: 0 auto;
+  background-color: #E8AA8E;
+}
+
+
+
+#footer {
+    color: black;
+    font-family: 'Sahitya', "Times New Roman", serif;
+    font-size: 0.8em;
+    border-top: 1px solid black;
+}
+
+
+img {
+  border: none;
+  width: 100%;
+}
+
+header {
+  background: tomato;
+}
+
+/*Flexbox Assignment*/
+
+.aside-1 {
+  background: lightpink;
+  width: 10px;
+}
+
+.aside-2 {
+  background: lightpink;
+}
+
+.wrapper {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+header, article, aside, footer {
+  flex: 1 100%;
+  padding: 10px;
+}
+
+.navigation{
+  list-style: none;
+	margin: 0;
+	background: #E8AA8E;
+    padding: 0;
+    display: flex;
+	flex-flow: column;
+}
+
+.navigation a {
+	text-decoration: none;
+	display: block;
+	color: white;
+    text-align:center;
+    padding: 10px;
+    border-bottom:1px solid black;
+}
+
+.navigation li:last-of-type a{
+  border-bottom: none;
+}
+
+@media (min-width:800px) {
+
+    .navigation {
+        flex-flow: row wrap;
+        justify-content: flex-end;
+    }
+
+    .navigation a {
+        border: none;
+    }
+
+    .navigation a:hover {
+    	background: lightpink;
+    }
+
+    aside {
+        flex: 1 auto;
+    }
+
+    article {
+		flex: 3 0px;
+	}
+
+    .aside-1 {
+        order: 1;
+    }
+
+    article {
+        order: 2;
+    }
+
+    .aside-2 {
+        order: 3;
+    }
+
+    footer {
+        order: 4;
+    }
+
+    article {
+        display: flex;
+        flex-flow: row;
+        flex-wrap: wrap;
+    }
+
+    .image {
+        width: 45%;
+        margin-left: 10px;
+    }
+
+    .story {
+        width: 45%;
+    }
+
+    .first {
+        margin-top: 0;
+        padding: 10px;
+    }
+
+}
