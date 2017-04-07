@@ -100,11 +100,37 @@ header, article, aside, footer {
   border-bottom: none;
 }
 
+@media all and (min-width:600px) {
+
+  .head {
+    display: flex;
+    flex-flow: column;
+  }
+
+  .navigation {
+    flex-flow: row;
+  }
+
+  .navigation li {
+    border: none;
+    margin: 5px;
+    padding: 10px;
+    background: #E8AA8E;
+  }
+
+}
+
 @media (min-width:800px) {
+
+    .head {
+      display: flex;
+      flex-flow: column;
+    }
 
     .navigation {
         flex-flow: row wrap;
-        justify-content: flex-end;
+        justify-content: space-around;
+        background: #E8AA8E;
     }
 
     .navigation a {
