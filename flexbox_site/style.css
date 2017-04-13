@@ -31,6 +31,19 @@ body {
   background-color: #C58875;
 }
 
+nav ul li {
+  display: block;
+  border-top: 1px #FFFAFA solid;
+}
+
+nav a {
+  color: #FFFAFA;
+  display: block;
+  text-decoration: none;
+  padding: 20px 30px;
+
+}
+
 
 #container {
   width: 95%;
@@ -54,7 +67,24 @@ img {
 }
 
 header {
-  background: tomato;
+  display: flex;
+  flex-flow: row;
+  background-color: tomato;
+  margin: 0;
+  padding: 0 10px;
+}
+
+.menu-trigger {
+  order: 1;
+}
+
+header h1 {
+  order: 2;
+  font-size: 2em;
+}
+
+nav ul {
+  display: none;
 }
 
 /*Flexbox Assignment*/
@@ -185,4 +215,29 @@ header, article, aside, footer {
         padding: 10px;
     }
 
+}
+
+/*Javascript assignment*/
+
+@media screen and (min-width: 700px) {
+
+  nav ul {
+    display: flex;
+  }
+
+  nav ul li {
+    border-top: none;
+  }
+
+  header h1 {
+    order: 1;
+  }
+
+  nav {
+    order: 2;
+  }
+
+  .menu-trigger {
+    display: none;
+  }
 }
